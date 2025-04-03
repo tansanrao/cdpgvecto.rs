@@ -30,7 +30,7 @@ jobs:
           # renovate: datasource=docker depName=registry.developers.crunchydata.com/crunchydata/crunchy-postgres
           - "ubi8-15.10-2"
           # renovate: datasource=docker depName=registry.developers.crunchydata.com/crunchydata/crunchy-postgres
-          - "ubi8-16.6-2"
+          - "ubi9-16.8-2513"
 
     runs-on: ubuntu-latest
     steps:
