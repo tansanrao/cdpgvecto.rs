@@ -11,7 +11,7 @@ WORKDIR /tmp
 ARG PG_MAJOR
 ARG TARGETARCH
 # renovate: datasource=github-releases depName=tensorchord/pgvecto.rs
-ARG PGVECTORS_TAG=v0.3.0
+ARG PGVECTORS_TAG=v0.4.0
 RUN curl -fSL -o pgvectors.deb \
       https://github.com/tensorchord/pgvecto.rs/releases/download/${PGVECTORS_TAG}/vectors-pg${PG_MAJOR}_${PGVECTORS_TAG:1}_${TARGETARCH}.deb \
     && ar x pgvectors.deb \
