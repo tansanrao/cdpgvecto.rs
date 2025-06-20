@@ -18,7 +18,7 @@ RUN curl -fSL -o pgvectors.deb \
     && tar -xJf data.tar.xz \
     && rm pgvectors.deb control.tar.* data.tar.*
 # renovate: datasource=github-releases depName=tensorchord/vectorchord
-ARG VECTORCHORD_TAG=0.3.0
+ARG VECTORCHORD_TAG=0.4.3
 RUN curl -fSL -o vchord.deb \
       https://github.com/tensorchord/VectorChord/releases/download/${VECTORCHORD_TAG}/postgresql-${PG_MAJOR}-vchord_${VECTORCHORD_TAG}-1_${TARGETARCH}.deb \
     && ar x vchord.deb \
